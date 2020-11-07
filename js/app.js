@@ -17,7 +17,7 @@ carouselSlide.style.transform = 'translateX(' + 'px)';
 nextBtn.addEventListener('click', ()=>{
     if(counter >= carouselImages.length -1) return;
     //change the speed of the transition
-    carouselSlide.style.transition = "transform 0.4s ease-in-out";
+    carouselSlide.style.transition = "transform 0.8s ease-in-out";
     counter++;
     carouselSlide.style.transform = 'translateX(' + (-size * counter) + 'px)';
 });
