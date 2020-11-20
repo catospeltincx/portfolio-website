@@ -68,42 +68,4 @@ p {
   /* top: 50%; */
   /* transform: translateY(-50%); */
 }
-.carousel-container img {
-  /* display: block; */
-  /* min-width: 200px; */
-  /* height: 100vh; */
-}
-
-/*
-.carousel-container {
-  overflow: hidden;
-  position: relative;
-}
-
-.carousel-slide {
-  display: flex;
-  height: 55vh;
-  width: 100vw;
-}
-
-#prevBtn {
-  width: 50%;
-  height: 100%;
-  margin: 0;
-  position: absolute;
-  top: 0%;
-  z-index: 10;
-  font-size: 30px;
-  cursor: w-resize;
-}
-
-#nextBtn {
-  width: 50%;
-  height: 100%;
-  position: absolute;
-  top: 0%;
-  z-index: 10;
-  right: 0%;
-  font-size: 30px;
-  cursor: e-resize;
-} */
+/* BUTTONS */
