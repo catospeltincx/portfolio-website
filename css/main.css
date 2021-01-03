@@ -12,6 +12,7 @@ body {
 
 img {
   max-width: 100%;
+  max-height: 700px;
 }
 
 header {
@@ -20,7 +21,6 @@ header {
 
 h1 a {
   color: black;
-  background-color: whitesmoke;
   text-decoration: none;
   margin: 0 0 0 0;
 }
@@ -33,19 +33,12 @@ p {
   color: white;
 }
 /* SLIDER */
-
-.img-alone {
-  max-width: 1200px;
-  max-height: 600px;
-}
-
 .img-gap {
   margin-right: 20px;
 }
 
 .wrapper {
   color: black;
-  background-color: whitesmoke;
   text-decoration: none;
   width: fit-content;
 }
@@ -79,4 +72,7 @@ p {
   /* top: 50%; */
   /* transform: translateY(-50%); */
 }
-/* BUTTONS */
+
+figcaption {
+  margin: 75px 100px;
+}
