@@ -32,6 +32,16 @@ h2 {
 p {
   color: white;
 }
+/* SLIDER */
+
+.img-alone {
+  max-width: 1200px;
+  max-height: 600px;
+}
+
+.img-gap {
+  margin-right: 20px;
+}
 
 .wrapper {
   color: black;
