@@ -12,7 +12,6 @@ body {
 
 img {
   max-width: 100%;
-  max-height: 700px;
 }
 
 header {
@@ -32,6 +31,12 @@ h2 {
 p {
   color: white;
 }
+
+.images {
+  display: flex;
+  flex-direction: row;
+}
+
 /* SLIDER */
 .img-gap {
   margin-right: 20px;
