@@ -4,7 +4,7 @@
 
 body {
   background-color: white;
-  margin: 10;
+  margin: 0;
   font-family: "Times New Roman", Times, serif;
 }
 
@@ -13,20 +13,44 @@ img {
   height: auto;
 }
 
-p {
-  margin: none;
+header {
+  display: flex;
+  flex-direction: row;
+}
+
+.contact {
+  background-color: rgb(252, 7, 7);
+  width: 230px;
+  padding: 25px 25px 25px 25px;
+  font-family: "Oswald", sans-serif;
+  font-size: 18px;
+}
+
+.contact-in-contact {
+  display: flex;
+  flex-direction: column;
+  padding: 0 0 0 100px;
+}
+
+#blue-link:hover {
+  color: blue;
+  text-decoration: none;
+}
+
+a {
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+}
+
+a:hover {
+  color: black;
+  text-decoration: underline wavy;
 }
 
 /*HOME PAGE*/
-header {
-  background-color: rgb(252, 215, 7);
-  width: 100px;
-  margin: 0px;
-}
-
-.project-list {
-  display: flex;
-  flex-direction: column;
+.home-gif {
+  width: fit-content;
+  height: auto;
 }
 
 /*IMAGE GALLERY*/
