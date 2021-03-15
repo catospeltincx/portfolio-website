@@ -48,4 +48,13 @@ header {
   height: auto;
 }
 
+/*SLIDER*/
+.carousel-container {
+  height: 80vh;
+  width: 100vw;
+}
 
+.carousel-image {
+  display: block;
+  height: 100vh;
+}
