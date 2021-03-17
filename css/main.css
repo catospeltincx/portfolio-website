@@ -27,11 +27,11 @@ header {
   font-size: 18px;
 }
 
-.contact a{
+.contact a {
   color: rgb(38, 157, 91);
 }
 
-.card{
+.card {
   display: flex;
   flex-direction: column;
   width: 240px;
@@ -57,4 +57,8 @@ header {
 .carousel-image {
   display: block;
   height: 100vh;
+}
+
+.slider {
+  width: 80%;
 }
