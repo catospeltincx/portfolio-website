@@ -5,6 +5,8 @@
 body {
   background-color: white;
   margin: 0;
+  display: flex;
+  flex-direction: row;
 }
 
 img {
@@ -51,7 +53,8 @@ header {
 /*SLIDER*/
 .carousel-container {
   height: 80vh;
-  width: 100vw;
+  width: 80vw;
+  padding: 50px;
 }
 
 .carousel-image {
