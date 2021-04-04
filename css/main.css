@@ -72,9 +72,9 @@ header {
 /*SLIDER*/
 .carousel-container {
   height: 80vh;
-  width: 80vw;
-  padding: 50px;
-  margin: 50px 0px 0px 500px;
+  width: 70vw;
+  padding: 25px;
+  margin: 0px 0px 0px 371px;
 }
 
 .carousel-image {
@@ -86,19 +86,17 @@ header {
   width: 80%;
 }
 
-/*iframe*/
+/*I-FRAME*/
 .iframe-wrapper {
-  padding: 50px;
   position: relative;
-  margin: 100px 0px 700px 550px;
+  margin: 25px 0px 0px 396px;
 }
 
 .iframe-wrapper #frame {
   position: absolute;
-  top: 0;
-  left: 0;
   width: 55vw;
-  height: 70vh;
+  height: 90vh;
+  border: 1px solid rgb(255, 0, 0);
 }
 
 /*NO-CAROUSEL*/
@@ -116,7 +114,7 @@ header {
 }
 
 /*TABLET*/
-@media (max-width: 800px) {
+@media (max-width: 950px) {
   /*HEADER*/
   header {
     width: 100vw;
