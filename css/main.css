@@ -71,9 +71,8 @@ header {
 
 /*SLIDER*/
 .carousel-container {
-  height: 80vh;
-  width: 70vw;
-  padding: 25px;
+  height: auto;
+  width: 85vw;
   margin: 0px 0px 0px 371px;
 }
 
@@ -96,7 +95,7 @@ header {
   position: absolute;
   width: 55vw;
   height: 90vh;
-  border: 1px solid rgb(255, 0, 0);
+  border: 1px solid rgb(0, 0, 0);
 }
 
 /*NO-CAROUSEL*/
@@ -106,8 +105,7 @@ header {
   padding: 50px;
   margin: 50px 50px 0px 500px;
 }
-
-.no-carousel img {
+s .no-carousel img {
   margin-bottom: 100px;
   min-width: 300px;
   height: auto;
@@ -129,8 +127,7 @@ header {
   .carousel-container {
     width: 100vw;
     height: 80vh;
-    padding: 50px;
-    margin: 300px 0px 0px 0px;
+    margin: 387px 0px 0px 0px;
   }
 
   .scroll-down {
@@ -157,5 +154,41 @@ header {
   .no-carousel {
     padding: 50px;
     margin: 350px 50px 0px 0px;
+  }
+}
+
+/*TELEFOON*/
+@media (max-width: 720px) {
+  /*HEADER*/
+  header {
+    height: 500px;
+  }
+
+  .card {
+    position: absolute;
+    z-index: +1;
+  }
+
+  .images {
+    z-index: +1;
+    margin-top: 338px;
+    padding: 0px 0px 0px 25px;
+  }
+
+  .scroll-down {
+    position: absolute;
+    padding: 300px 0px 0px 230px;
+  }
+
+  .images {
+    display: flex;
+    flex-direction: row;
+  }
+
+  /*SLIDER*/
+  .carousel-container {
+    width: 100vw;
+    height: 80vh;
+    margin: 550px 0px 0px 0px;
   }
 }
