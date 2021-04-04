@@ -161,34 +161,38 @@ s .no-carousel img {
 @media (max-width: 720px) {
   /*HEADER*/
   header {
-    height: 500px;
+    height: 690px;
   }
 
   .card {
-    position: absolute;
+    position: fixed;
     z-index: +1;
   }
 
   .images {
-    z-index: +1;
     margin-top: 338px;
     padding: 0px 0px 0px 25px;
   }
 
   .scroll-down {
-    position: absolute;
-    padding: 300px 0px 0px 230px;
+    position: fixed;
+    padding: 715px 0px 0px 25px;
   }
 
   .images {
     display: flex;
     flex-direction: row;
+    width: 2000px;
+  }
+
+  .image {
+    padding-right: 25px;
   }
 
   /*SLIDER*/
   .carousel-container {
     width: 100vw;
     height: 80vh;
-    margin: 550px 0px 0px 0px;
+    margin: 760px 0px 0px 0px;
   }
 }
