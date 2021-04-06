@@ -26,6 +26,13 @@ header {
   overflow-y: scroll;
 }
 
+video {
+  width: 321px;
+  height: 208px;
+  position: fixed;
+  top: 25px;
+}
+
 .contact a {
   color: rgb(25, 98, 255);
   text-decoration: none;
@@ -59,6 +66,10 @@ header {
   max-width: 321px;
   height: auto;
   padding-bottom: 25px;
+}
+
+.scroll-right {
+  display: none;
 }
 
 .scroll-down {
@@ -161,7 +172,7 @@ s .no-carousel img {
 @media (max-width: 720px) {
   /*HEADER*/
   header {
-    height: 690px;
+    height: 715px;
   }
 
   .card {
@@ -174,9 +185,16 @@ s .no-carousel img {
     padding: 0px 0px 0px 25px;
   }
 
+  .scroll-right {
+    position: fixed;
+    color: red;
+    display: block;
+    margin: 300px 0px 0px 270px;
+  }
+
   .scroll-down {
     position: fixed;
-    padding: 715px 0px 0px 25px;
+    padding: 737px 0px 0px 137px;
   }
 
   .images {
@@ -194,5 +212,10 @@ s .no-carousel img {
     width: 100vw;
     height: 80vh;
     margin: 760px 0px 0px 0px;
+  }
+
+  /*I-FRAME*/
+  .iframe-wrapper {
+    margin-top: 780px;
   }
 }
