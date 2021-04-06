@@ -170,6 +170,10 @@ s .no-carousel img {
 /*TELEFOON*/
 @media (max-width: 720px) {
   /*HEADER*/
+  video {
+    max-height: 104px;
+    width: auto;
+  }
   header {
     height: 715px;
   }
