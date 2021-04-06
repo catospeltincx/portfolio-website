@@ -131,8 +131,7 @@ s .no-carousel img {
   }
 
   .images {
-    margin-top: 75px;
-    padding: 0px 25px 0px 371px;
+    margin: 75px 25px 0px 371px;
   }
 
   .carousel-container {
@@ -180,11 +179,6 @@ s .no-carousel img {
     z-index: +1;
   }
 
-  .images {
-    margin-top: 338px;
-    padding: 0px 0px 0px 25px;
-  }
-
   .scroll-right {
     position: fixed;
     color: red;
@@ -197,9 +191,16 @@ s .no-carousel img {
     padding: 737px 0px 0px 137px;
   }
 
+  .images {
+    display: flex;
+    flex-direction: row;
+    width: 2000px;
+    margin: 338px 0px 0px 25px;
+    padding: 0px;
+  }
+
   .image {
-    padding-right: 25px;
-    width: 321px;
+    margin-right: 25px;
   }
 
   /*SLIDER*/
