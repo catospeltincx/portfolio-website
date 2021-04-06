@@ -197,14 +197,9 @@ s .no-carousel img {
     padding: 737px 0px 0px 137px;
   }
 
-  .images {
-    display: flex;
-    flex-direction: row;
-    width: 2000px;
-  }
-
   .image {
     padding-right: 25px;
+    width: 321px;
   }
 
   /*SLIDER*/
