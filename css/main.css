@@ -17,6 +17,7 @@ img {
 
 /*HEADER*/
 header {
+  position: absolute;
   display: flex;
   flex-direction: column;
   background-color: rgb(0, 0, 0);
@@ -75,10 +76,11 @@ video {
 }
 
 /*SLIDER*/
-.carousel-container {
+
+.wrapper {
   height: auto;
-  width: 85vw;
-  margin: 0px 0px 0px 371px;
+  width: 70%;
+  margin-left: 371px;
 }
 
 .carousel-image {
@@ -93,13 +95,10 @@ video {
 /*I-FRAME*/
 .iframe-wrapper {
   position: relative;
-  margin: 25px 0px 0px 25px;
 }
 
 .iframe-wrapper #frame {
   position: absolute;
-  width: 55vw;
-  height: 90vh;
   border: 1px solid rgb(0, 0, 0);
 }
 
@@ -132,23 +131,30 @@ s .no-carousel img {
     margin: 75px 25px 0px 346px;
   }
 
-  .carousel-container {
-    width: 100vw;
-    height: 80vh;
-    margin: 387px 0px 0px 0px;
-  }
-
   .scroll-down {
     position: fixed;
     color: rgb(255, 0, 0);
     margin: 25px 0px 25px 371px;
   }
 
+  /*BODY*/
+  body {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .wrapper {
+    top: 349px;
+    position: fixed;
+    width: 100vw;
+    margin-left: 0px;
+  }
+
   /*I-FRAME*/
   .iframe-wrapper {
     padding: 25px;
     position: fixed;
-    margin: 362px 0px 700px 25px;
+    margin: 376px 0px 0px 25px;
   }
 
   .iframe-wrapper #frame {
@@ -166,19 +172,15 @@ s .no-carousel img {
 
 /*TELEFOON*/
 @media (max-width: 720px) {
-  /*HEADER*/
   video {
     max-height: 104px;
     width: auto;
   }
 
-  /*NK*/
   header {
     height: 300px;
     overflow-y: auto;
   }
-
-  /*NK*/
 
   .scroll-down {
     margin-left: 210px;
@@ -190,10 +192,15 @@ s .no-carousel img {
   }
 
   /*SLIDER*/
-  .carousel-container {
+  body {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .wrapper {
+    top: 245px;
+    position: fixed;
     width: 100vw;
-    height: 80vh;
-    margin: 760px 0px 0px 0px;
   }
 
   /*I-FRAME*/
