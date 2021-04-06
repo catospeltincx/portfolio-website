@@ -17,7 +17,6 @@ img {
 
 /*HEADER*/
 header {
-  position: fixed;
   display: flex;
   flex-direction: column;
   background-color: rgb(0, 0, 0);
@@ -29,8 +28,7 @@ header {
 video {
   width: 321px;
   height: 208px;
-  position: fixed;
-  top: 25px;
+  margin: 25px 0px 0px 25px;
 }
 
 .contact a {
@@ -48,16 +46,13 @@ video {
   padding: 25px 0 0 25px;
 }
 
-.card {
-  position: fixed;
-  color: rgb(0, 0, 0);
+.contact-text {
   display: flex;
   flex-direction: column;
-  margin: 258px 0px 0px 25px;
+  margin: 25px 0px 0px 25px;
 }
 
 .images {
-  margin-top: 386px;
   padding: 0px 25px 0px 25px;
 }
 
@@ -73,10 +68,9 @@ video {
 }
 
 .scroll-down {
-  position: fixed;
   color: rgb(255, 0, 0);
   text-align: right;
-  padding: 315px 0px 0px 240px;
+  margin-right: 25px;
   z-index: +1;
 }
 
@@ -99,7 +93,7 @@ video {
 /*I-FRAME*/
 .iframe-wrapper {
   position: relative;
-  margin: 25px 0px 0px 396px;
+  margin: 25px 0px 0px 25px;
 }
 
 .iframe-wrapper #frame {
@@ -127,11 +121,15 @@ s .no-carousel img {
   /*HEADER*/
   header {
     width: 100vw;
-    height: 337px;
+    height: 350px;
+  }
+
+  .contact {
+    position: fixed;
   }
 
   .images {
-    margin: 75px 25px 0px 371px;
+    margin: 75px 25px 0px 346px;
   }
 
   .carousel-container {
@@ -143,8 +141,7 @@ s .no-carousel img {
   .scroll-down {
     position: fixed;
     color: rgb(255, 0, 0);
-    margin: 0px 0px 25px 0px;
-    padding: 25px 0px 0px 371px;
+    margin: 25px 0px 25px 371px;
   }
 
   /*I-FRAME*/
@@ -174,37 +171,22 @@ s .no-carousel img {
     max-height: 104px;
     width: auto;
   }
+
+  /*NK*/
   header {
-    height: 715px;
+    height: 300px;
+    overflow-y: auto;
   }
 
-  .card {
-    position: fixed;
-    z-index: +1;
-  }
-
-  .scroll-right {
-    position: fixed;
-    color: red;
-    display: block;
-    margin: 300px 0px 0px 270px;
-  }
+  /*NK*/
 
   .scroll-down {
-    position: fixed;
-    padding: 737px 0px 0px 137px;
+    margin-left: 210px;
   }
 
   .images {
-    display: flex;
-    flex-direction: row;
-    width: 2000px;
-    margin: 338px 0px 0px 25px;
-    padding: 0px;
-  }
-
-  .image {
-    margin-right: 25px;
+    max-width: 160px;
+    margin: 65px 0px 0px 185px;
   }
 
   /*SLIDER*/
@@ -216,6 +198,6 @@ s .no-carousel img {
 
   /*I-FRAME*/
   .iframe-wrapper {
-    margin-top: 780px;
+    margin-top: 325px;
   }
 }
