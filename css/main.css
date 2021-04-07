@@ -5,7 +5,7 @@
 body {
   background-color: rgb(255, 255, 255);
   margin: 0;
-  font-size: 19.2px;
+  font-size: 17px;
 }
 
 img {
@@ -198,9 +198,8 @@ s .no-carousel img {
 
 /*TELEFOON*/
 @media (max-width: 720px) {
-  video {
-    max-height: 104px;
-    width: auto;
+  body {
+    font-size: 15px;
   }
 
   header {
@@ -208,13 +207,30 @@ s .no-carousel img {
     overflow-y: auto;
   }
 
+  video {
+    max-height: 104px;
+    width: auto;
+    margin: 12px 0px 0px 12px;
+  }
+
+  .contact-text {
+    margin: 12px 0px 0px 12px;
+  }
+
   .scroll-down {
-    margin-left: 210px;
+    margin-left: 185px;
+    margin: 12px 0px 12px 185px;
   }
 
   .images {
-    max-width: 160px;
-    margin: 65px 0px 0px 185px;
+    max-width: 100vw;
+    min-width: 161px;
+    padding: 12px 12px 12px 0px;
+    margin: 40px 0px 12px 185px;
+  }
+
+  .image {
+    padding-bottom: 12px;
   }
 
   /*PROJECT-DESCRIPTION*/
@@ -237,6 +253,11 @@ s .no-carousel img {
   /*I-FRAME*/
   .iframe-wrapper {
     margin-top: 340px;
-    padding: 25px;
+    padding: 25px 0px 0px 0px;
+  }
+
+  .iframe-wrapper #frame {
+    width: 100vw;
+    height: 50vh;
   }
 }
