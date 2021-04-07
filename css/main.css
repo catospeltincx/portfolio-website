@@ -76,10 +76,9 @@ video {
 }
 
 /*SLIDER*/
-
 .wrapper {
   height: auto;
-  width: 70%;
+  width: 100%;
   margin-left: 371px;
 }
 
@@ -95,9 +94,13 @@ video {
 /*I-FRAME*/
 .iframe-wrapper {
   position: relative;
+  padding: 25px;
 }
 
 .iframe-wrapper #frame {
+  margin: 0px 0px 0px 376px;
+  width: 70vw;
+  height: 80vh;
   position: absolute;
   border: 1px solid rgb(0, 0, 0);
 }
@@ -154,12 +157,10 @@ s .no-carousel img {
   .iframe-wrapper {
     padding: 25px;
     position: fixed;
-    margin: 376px 0px 0px 25px;
+    margin: 376px 0px 0px -350px;
   }
 
   .iframe-wrapper #frame {
-    top: 0;
-    left: 0;
     width: 92vw;
     height: 60vh;
   }
@@ -206,5 +207,6 @@ s .no-carousel img {
   /*I-FRAME*/
   .iframe-wrapper {
     margin-top: 325px;
+    padding: 25px;
   }
 }
