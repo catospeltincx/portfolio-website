@@ -5,14 +5,17 @@
 body {
   background-color: rgb(255, 255, 255);
   margin: 0;
-  display: flex;
-  flex-direction: row;
   font-size: 19.2px;
 }
 
 img {
   max-width: 100%;
   height: auto;
+}
+
+p {
+  padding: 0px;
+  margin: 0px;
 }
 
 /*HEADER*/
@@ -26,10 +29,12 @@ header {
   overflow-y: scroll;
 }
 
+/*VISITE-KAART*/
 video {
   width: 321px;
   height: 208px;
   margin: 25px 0px 0px 25px;
+  z-index: +1;
 }
 
 .contact a {
@@ -42,17 +47,19 @@ video {
   text-decoration: none;
 }
 
-.home {
+/* .home {
   text-decoration: none;
   padding: 25px 0 0 25px;
-}
+} */
 
 .contact-text {
   display: flex;
   flex-direction: column;
   margin: 25px 0px 0px 25px;
+  z-index: +1;
 }
 
+/*NAVIGATION-HEADER*/
 .images {
   padding: 0px 25px 0px 25px;
 }
@@ -64,15 +71,18 @@ video {
   padding-bottom: 25px;
 }
 
-.scroll-right {
-  display: none;
-}
-
 .scroll-down {
   color: rgb(255, 0, 0);
   text-align: right;
   margin-right: 25px;
   z-index: +1;
+}
+
+/*PROJECT-DESCRIPTION*/
+.project-description {
+  padding: 25px 0px 0px 25px;
+  margin-left: 371px;
+  font-style: oblique;
 }
 
 /*SLIDER*/
@@ -93,16 +103,16 @@ video {
 
 /*I-FRAME*/
 .iframe-wrapper {
-  position: relative;
+  /* position: relative; */
   padding: 25px;
+  margin-left: 371px;
 }
 
 .iframe-wrapper #frame {
-  margin: 0px 0px 0px 376px;
-  width: 70vw;
-  height: 80vh;
-  position: absolute;
+  /* position: absolute; */
   border: 1px solid rgb(0, 0, 0);
+  width: 60vw;
+  height: 90vh;
 }
 
 /*NO-CAROUSEL*/
@@ -116,6 +126,14 @@ s .no-carousel img {
   margin-bottom: 100px;
   min-width: 300px;
   height: auto;
+}
+
+/*SMALL-DESKTOP-WINDOW*/
+@media (max-width: 1050px) {
+  /*I-FRAME*/
+  .iframe-wrapper #frame {
+    width: 55vw;
+  }
 }
 
 /*TABLET*/
