@@ -2,10 +2,15 @@
   box-sizing: border-box;
 }
 
+@font-face {
+  font-family: aeronef;
+  src: url(/fonts/Aeronef.ttf);
+}
+
 body {
   background-color: rgb(255, 255, 255);
   margin: 0;
-  font-size: 17px;
+  font-size: 22px;
 }
 
 img {
@@ -39,7 +44,8 @@ video {
 }
 
 .contact a {
-  color: rgb(25, 98, 255);
+  font-family: aeronef;
+  color: rgb(255, 255, 255);
   text-decoration: none;
 }
 
@@ -60,12 +66,17 @@ video {
   z-index: +1;
 }
 
+.contact-text .phone {
+  font-size: 16px;
+}
+
 /*NAVIGATION-HEADER*/
 .images {
   padding: 0px 25px 0px 25px;
 }
 
 .image {
+  position: relative;
   width: 100%;
   max-width: 321px;
   height: auto;
@@ -73,6 +84,7 @@ video {
 }
 
 .scroll-down {
+  font-family: aeronef;
   color: rgb(255, 0, 0);
   text-align: right;
   margin: 0px 25px 25px 0px;
@@ -80,10 +92,32 @@ video {
 }
 
 /*PROJECT-DESCRIPTION*/
-.project-description {
-  padding: 25px 0px 0px 25px;
+.project-title {
+  padding: 25px 0px 5px 25px;
   margin-left: 371px;
-  font-style: oblique;
+  font-family: aeronef;
+  font-size: 21px;
+  color: rgb(0, 0, 0);
+}
+
+mark {
+  background-color: white;
+  text-decoration: underline;
+}
+
+.a-mark {
+  text-decoration: underline;
+}
+
+.a-mark:hover {
+  color: rgb(255, 0, 0);
+}
+
+.project-description {
+  padding: 0px 0px 25px 25px;
+  margin-left: 371px;
+  font-size: 17px;
+  max-width: 500px;
 }
 
 /*SLIDER*/
@@ -117,14 +151,21 @@ video {
 /*NO-CAROUSEL*/
 .no-carousel {
   display: flex;
-  flex-direction: column;
-  padding: 50px;
-  margin: 50px 50px 0px 500px;
-}
-s .no-carousel img {
-  margin-bottom: 100px;
-  min-width: 300px;
+  flex-direction: row;
+  width: 95vw;
+  max-width: 600px;
   height: auto;
+}
+
+.no-carousel img {
+  padding: 0px 0px 25px 25px;
+}
+
+@media (max-width: 1500px) {
+  .no-carousel {
+    display: flex;
+    flex-direction: column;
+  }
 }
 
 /*SMALL-DESKTOP-WINDOW*/
@@ -164,36 +205,31 @@ s .no-carousel img {
     flex-direction: column;
   }
 
-  .wrapper {
-    top: 349px;
-    position: fixed;
-    width: 100vw;
+  .project-title {
+    padding: 375px 0px 0px 25px;
     margin-left: 0px;
   }
 
-  /*PROJECT-DESCRIPTION*/
   .project-description {
-    position: fixed;
-    padding: 25px 0px 0px 25px;
-    margin: 350px 0px 0px 0px;
-    font-style: oblique;
+    padding: 0px 0px 0px 25px;
+    margin-left: 0px;
   }
+
+  .wrapper {
+    margin: 25px 0px 0px 0px;
+  }
+
+  /*PROJECT-DESCRIPTION*/
 
   /*I-FRAME*/
   .iframe-wrapper {
     position: fixed;
-    margin: 396px 0px 0px 0px;
+    margin: 0px 0px 0px 0px;
   }
 
   .iframe-wrapper #frame {
     width: 92vw;
     height: 50vh;
-  }
-
-  /*NO-CAROUSEL*/
-  .no-carousel {
-    padding: 50px;
-    margin: 350px 50px 0px 0px;
   }
 }
 
@@ -236,9 +272,14 @@ s .no-carousel img {
 
   /*PROJECT-DESCRIPTION*/
   .project-description {
-    position: absolute;
-    margin: 295px 0px 0px 0px;
+    padding: 0px 0px 0px 25px;
+    margin-left: 0px;
     z-index: -1;
+  }
+
+  .project-title {
+    padding: 320px 0px 0px 25px;
+    margin-left: 0px;
   }
 
   /*SLIDER*/
@@ -247,17 +288,10 @@ s .no-carousel img {
     flex-direction: column;
   }
 
-  .wrapper {
-    top: 245px;
-    position: fixed;
-    width: 100vw;
-  }
-
   /*I-FRAME*/
   .iframe-wrapper {
     z-index: -1;
     position: relative;
-    margin-top: 340px;
     padding: 25px 0px 0px 0px;
   }
 
