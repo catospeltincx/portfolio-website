@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="../css/main.css" />
     <title>Cato Speltincx</title>
+    <link rel="stylesheet" href="/third-party/flickity.css" />
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
       href="https://fonts.googleapis.com/css2?family=Oswald&display=swap"
@@ -14,19 +15,16 @@
   <body>
     <header>
       <div class="contact">
-        <a href="../index.html"
-          ><video src="/img/visite-kaart.mp4" autoplay loop></video
-        ></a>
         <div class="contact-text">
           <a href="index.html">Cato Speltincx</a>
           <a href="mailto: cato.speltincx@telenet.be">mail</a>
           <a href="tel:+32497868370">+32 497 86 83 70</a>
         </div>
       </div>
-      <p class="scroll-down">&darr; scroll</p>
+      <p class="scroll-down">&darr;</p>
       <div class="images">
         <div class="image">
-          <a href="/index.html"><img src="img/m-proef/masterproef-01.jpg" /></a>
+          <a href="/index.html"><img src="img/m-proef/m-proef-02.png" /></a>
         </div>
         <div class="image">
           <a href="b-proef/index.html"
@@ -55,20 +53,28 @@
     </header>
 
     <div class="project">
-      <p class="project-title">Master Project</p>
+      <p class="project-title">Reading, Browsing, Orderly Messing</p>
       <div class="project-description">
-        <p>In progress!</p>
-        <a href="https://m-proef.netlify.app">https://m-proef.netlify.app</a>
-        <p>On this website I collect the research of my master project.</p>
+        <p>bla bla about masterproject</p>
       </div>
-      <div class="iframe-wrapper">
-        <iframe
-          id="frame"
-          src="https://m-proef.netlify.app/"
-          frameborder="1"
-          allowfullscreen
-        ></iframe>
+
+      <div class="wrapper">
+        <video autoplay muted>
+          <source src="/img/m-proef/m-proef-01.mp4" type="video/mp4" />
+        </video>
+        <div class="carousel-container">
+
+          <img src="/img/m-proef/m-proef-02.png" alt="" />
+          <img src="/img/m-proef/m-proef-03.png" alt="" />
+          <img src="/img/m-proef/m-proef-04.png" alt="" />
+          <img src="/img/m-proef/m-proef-05.png" alt="" />
+
+        </div>
       </div>
     </div>
+
+    <script src="/third-party/flickity.pkgd.min.js"></script>
+    <script src="/js/app.js"></script>
+
   </body>
 </html>

@@ -11,11 +11,14 @@ body {
   background-color: rgb(255, 255, 255);
   margin: 0;
   font-size: 22px;
+  display: flex;
+  flex-direction: row;
 }
 
 img {
   max-width: 100%;
   height: auto;
+
 }
 
 p {
@@ -25,39 +28,29 @@ p {
 
 /*HEADER*/
 header {
-  position: absolute;
   display: flex;
   flex-direction: column;
-  background-color: rgb(0, 0, 0);
-  width: 371px;
-  max-height: 100%;
+  background-color: rgb(255, 255, 255);
+  min-width: 371px;
   overflow-y: scroll;
   overflow-x: hidden;
 }
 
-/*VISITE-KAART*/
-video {
-  width: 321px;
-  height: 208px;
-  margin: 25px 0px 0px 25px;
-  z-index: +1;
+ video {
+  max-width: 70vw;
+  height: auto;
 }
 
 .contact a {
   font-family: aeronef;
-  color: rgb(255, 255, 255);
-  text-decoration: none;
-}
-
-.contact a:hover {
   color: rgb(255, 0, 0);
   text-decoration: none;
 }
 
-/* .home {
+.contact a:hover {
+  color: rgb(255, 5, 247);
   text-decoration: none;
-  padding: 25px 0 0 25px;
-} */
+}
 
 .contact-text {
   display: flex;
@@ -92,9 +85,13 @@ video {
 }
 
 /*PROJECT-DESCRIPTION*/
+.project{
+  width: 100vw;
+  max-height: 700px;
+}
+
 .project-title {
   padding: 25px 0px 5px 25px;
-  margin-left: 371px;
   font-family: aeronef;
   font-size: 21px;
   color: rgb(0, 0, 0);
@@ -115,7 +112,6 @@ mark {
 
 .project-description {
   padding: 0px 0px 25px 25px;
-  margin-left: 371px;
   font-size: 17px;
   max-width: 500px;
 }
@@ -123,8 +119,7 @@ mark {
 /*SLIDER*/
 .wrapper {
   height: auto;
-  width: 100%;
-  margin-left: 371px;
+  width: 70vw;
 }
 
 .carousel-image {
@@ -133,19 +128,22 @@ mark {
 }
 
 .slider {
-  width: 80%;
+  width: 100vw;
 }
+
+/* .is-selected{
+  width: 80vw;
+} */
 
 /*I-FRAME*/
 .iframe-wrapper {
   padding: 25px;
-  margin-left: 371px;
 }
 
 .iframe-wrapper #frame {
   border: 1px solid rgb(0, 0, 0);
   width: 60vw;
-  height: 90vh;
+  height: 70vh;
 }
 
 /*NO-CAROUSEL*/
@@ -166,6 +164,10 @@ mark {
     display: flex;
     flex-direction: column;
   }
+
+  .wrapper{
+    width: 100vw;
+  }  
 }
 
 /*SMALL-DESKTOP-WINDOW*/
@@ -174,6 +176,10 @@ mark {
   .iframe-wrapper #frame {
     width: 55vw;
   }
+
+  .wrapper{
+    width: 100vw;
+  }  
 }
 
 /*TABLET*/
@@ -207,20 +213,18 @@ mark {
 
   .project-title {
     padding: 375px 0px 0px 25px;
-    margin-left: 0px;
   }
 
   .project-description {
     padding: 0px 0px 0px 25px;
-    margin-left: 0px;
   }
 
   .wrapper {
     margin: 25px 0px 0px 0px;
+    width: 100vw;
   }
 
   /*PROJECT-DESCRIPTION*/
-
   /*I-FRAME*/
   .iframe-wrapper {
     position: fixed;
@@ -273,13 +277,11 @@ mark {
   /*PROJECT-DESCRIPTION*/
   .project-description {
     padding: 0px 0px 0px 25px;
-    margin-left: 0px;
     z-index: -1;
   }
 
   .project-title {
     padding: 320px 0px 0px 25px;
-    margin-left: 0px;
   }
 
   /*SLIDER*/
